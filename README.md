@@ -5,8 +5,6 @@
 
 Este projeto consiste no desenvolvimento de uma CLI (Command Line Interface) para controle de um robô DOBOT Magician Lite. A CLI também possui um comando "interface" que abre uma interface gráfica para controle do robô, transformando a CLI em uma interface híbrida.
 
----
-
 ## Instalação e execução
 
 Para instalar as dependências do projeto, comece clonando o repositório
@@ -50,8 +48,6 @@ $ python main.py --help
 │ mover              Move o robô para uma posição específica.                              │
 ╰──────────────────────────────────────────────────────────────────────────────────────────╯
 ```
-
----
 
 ## Comandos
 
