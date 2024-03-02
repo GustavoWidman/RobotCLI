@@ -1,9 +1,7 @@
-from serial.serialutil import SerialException
 from yaspin import yaspin
 from utils.text import cstring, printc
 from utils.ports import serial_ports
 from lib.pydobot import Dobot
-import time
 import json
 import os
 
@@ -53,7 +51,7 @@ class RobotWrapper:
 				printc(f"[&6ROBOT&f] &aRobô encontrado na porta &5{port}")
 
 				return port
-			except SerialException as e:
+			except Exception as e:
 				if ("Permission denied" in str(e)):
 					self.spinner.stop()
 					printc(f"[&6ROBOT&f] &cErro de permissão, tente rodar o programa como administrador.")
