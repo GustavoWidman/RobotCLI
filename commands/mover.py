@@ -15,7 +15,7 @@ class Pos(str, Enum):
 	z = "z"
 
 @app.command(short_help="Move o robô para uma posição específica.")
-def mover(posição: Pos, valor: Annotated[float, typer.Option(prompt=True)]):
+def mover(eixo: Pos, valor: Annotated[float, typer.Option(prompt=True)]):
 	"""
 		Move o robô para uma posição específica
 
@@ -38,7 +38,7 @@ def mover(posição: Pos, valor: Annotated[float, typer.Option(prompt=True)]):
 	curr_pos = robot.current()
 
 	future_pos = curr_pos.copy()
-	future_pos[posição] = valor + curr_pos[posição]
+	future_pos[eixo] = valor + curr_pos[eixo]
 
 	printc(f"[&6ROBOT&f] &bEu estou em &dX: {curr_pos['x']}&b, &dY: {curr_pos['y']}&b, &dZ: {curr_pos['z']}")
 

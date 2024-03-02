@@ -40,6 +40,9 @@ class RobotWrapper:
 
 
 	def scan_ports(self) -> str:
+		"""
+			Procura por portas seriais disponíveis e tenta conectar com o robô
+		"""
 		ports = serial_ports()
 		for port in ports:
 			self.spinner.text = cstring(f"[&6ROBOT&f] &bProcurando robô na porta &5{port}")
