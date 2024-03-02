@@ -19,10 +19,10 @@ def interface(view = None):
 
 			Isso abrirá a interface gráfica do robô
 	"""
-	if view is not None and view is not "web":
+	if view != None and view != "web":
 		raise ValueError("Apenas \"web\" é suportado como visualização.")
 
-	if view is "web": ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+	if view == "web": ft.app(target=main, view=ft.AppView.WEB_BROWSER)
 
 	#? Camada de compatibilidade com sistemas operacionais
 	if sys.platform.startswith('win'):
