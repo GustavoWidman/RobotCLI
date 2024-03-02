@@ -159,8 +159,8 @@ A estrutura do projeto é composta por pastas e arquivos que organizam os comand
 
 Segue abaixo um vídeo demonstrativo do funcionamento da CLI e da interface gráfica.
 
-<video controls preload="none" width="100%" poster="https://files.r3dlust.com/s/pCeRBkHsoKwkKgS/preview">
- <source src="https://files.r3dlust.com/s/pCeRBkHsoKwkKgS/download" type="video/mp4">
-</video>
+
+https://github.com/GustavoWidman/RobotCLI/assets/123963822/93850de5-824e-4837-8639-6dd7f861ecd0
+
 
 [Link para o vídeo](https://links.r3dlust.com/robotcli-ponderada)
